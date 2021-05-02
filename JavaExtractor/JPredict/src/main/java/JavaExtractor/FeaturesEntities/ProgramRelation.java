@@ -29,7 +29,7 @@ public class ProgramRelation {
 	}
 
 	public String toString() {
-		return String.format("%s,%s,%s", m_Source.getName(), m_HashedPath,
+		return String.format("%s,%s", m_Source.getName(),
 				m_Target.getName());
 	}
 
