@@ -18,9 +18,9 @@
 #   recommended to use a multi-core machine for the preprocessing 
 #   step and set this value to the number of cores.
 # PYTHON - python3 interpreter alias.
-TRAIN_DIR=my_train_dir
-VAL_DIR=my_val_dir
-TEST_DIR=my_test_dir
+TRAIN_DIR=java-small/training
+VAL_DIR=java-small/validation
+TEST_DIR=java-small/test
 DATASET_NAME=my_dataset
 MAX_CONTEXTS=200
 WORD_VOCAB_SIZE=1301136
@@ -64,6 +64,6 @@ ${PYTHON} preprocess.py --train_data ${TRAIN_DATA_FILE} --test_data ${TEST_DATA_
     
 # If all went well, the raw data files can be deleted, because preprocess.py creates new files 
 # with truncated and padded number of paths for each example.
-rm ${TRAIN_DATA_FILE} ${VAL_DATA_FILE} ${TEST_DATA_FILE} ${TARGET_HISTOGRAM_FILE} ${ORIGIN_HISTOGRAM_FILE} \
-  ${PATH_HISTOGRAM_FILE}
+#rm ${TRAIN_DATA_FILE} ${VAL_DATA_FILE} ${TEST_DATA_FILE} ${TARGET_HISTOGRAM_FILE} ${ORIGIN_HISTOGRAM_FILE} \
+#  ${PATH_HISTOGRAM_FILE}
 
